@@ -1,0 +1,189 @@
+@import '@/assets/styles/vars.scss';
+@import '@/assets/styles/mixins.scss';
+
+.footer {
+  background: $footerBgColor;
+  padding: 64px 64px 55px;
+
+  @include onPhone {
+    padding: 50px 45px;
+  }
+
+  &__titles {
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 200px;
+
+    @include onPhone {
+      gap: 70px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include onMiniPhone {
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 156px;
+    font-family: "HelveticaNeueCyr-Roman";
+
+    @include onPhone {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__offices {
+    padding-right: 190px;
+
+    @include onDesktop {
+      padding-right: 150px;
+    }
+
+    @include onPhone{
+      padding-right: 0;
+    }
+  }
+
+  &__location-kyiv {
+    margin-bottom: 48px;
+
+    @include onMiniPhone {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__location-name {
+    font-size: 22px;
+    padding-bottom: 8px;
+    font-family: "HelveticaNeueCyr-Roman";
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+    width: 100%;
+    line-height: 140%;
+    font-size: 16px;
+  }
+
+  &__phone {
+    color: $blackColor;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+
+  &__email {
+    color: $blackColor;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+
+  &__street {
+    color: $blackColor;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+
+
+
+
+
+  &__business {
+    padding-right: 370px;
+
+    
+    @include onDesktop {
+      padding-right: 310px;
+    }
+
+    @include onTablet {
+      padding-right: 180px;
+    }
+
+    @include onPhone {
+      padding-right: 0;
+      text-align: right;
+    }
+
+    @include onMiniPhone {
+      padding-right: 0;
+      text-align: center;
+    }  
+    
+    &-title {
+    font-size: 22px;
+    padding-bottom: 8px;
+    font-family: "HelveticaNeueCyr-Roman";
+    }
+
+    &-email {
+      color: $blackColor;
+      border-bottom: 1px solid $blackColor;
+      font-size: 16px;
+      padding-bottom: 1px;
+      font-family: "HelveticaNeueCyr-Light";
+    }
+  }
+
+  &__career {
+    margin-bottom: 54px;
+
+    @include onMiniPhone {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__suppliers {
+    margin-bottom: 54px;
+
+    @include onMiniPhone {
+      margin-bottom: 35px;
+    }
+  }
+
+
+  &__other {
+    @include onPhone {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       margin: 0 auto;
+    }
+  }
+
+  &__message {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "HelveticaNeueCyr-Roman";
+  }
+
+  &__message-sub {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 36px;
+    font-family: "HelveticaNeueCyr-ThinItalic";
+  }
+
+  &__other-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__other-media {
+    color: $blackColor;
+    border-bottom: 1px solid $blackColor;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+
+  &__other-brief {
+    color: $blackColor;
+    border-bottom: 1px solid $blackColor;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+}

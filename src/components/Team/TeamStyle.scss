@@ -1,0 +1,222 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/vars.scss';
+
+.team {
+  background: $mainBgColor;
+  padding-right: 20px;
+
+  @include onMiniTablet {
+    padding-right: 0;
+  }
+
+  &__wrapp {
+    display: flex;
+    margin-right: 130px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include onMiniTablet {
+      margin-right: 0;
+      gap: 20px;
+    }
+  }
+
+  &__person {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+
+    &::after {
+      content: "";
+      display: block;    
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 50px;
+      background: linear-gradient(to top, transparent, #000000, #1b1b1b);
+      opacity: 0.9;
+    }
+  }
+
+  &__people {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+
+    &::after {
+      content: "";
+      display: block;    
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent, #141313b9, #1b1b1b);
+      opacity: 0.9;
+    }
+
+    &-bottom {
+      position: relative;
+      
+      &::after {
+        content: "";
+        display: block;    
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to bottom, transparent, #141313b9, #1b1b1b);
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__caption {
+    display: flex;
+    color: $whiteColor;
+    gap: 8px;
+    padding-left: 64px;
+    bottom: 160px;
+    position: relative;
+    z-index: 2;  
+    font-size: 22px;
+
+    &-about {
+      font-family: "HelveticaNeueCyr-LightItalic";
+    }
+
+    &-team {
+      border-bottom: 1px solid $whiteColor;
+      font-family: "HelveticaNeueCyr-Roman";
+      cursor: pointer;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include onPhone {
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__discover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    &-text {
+      color: $whiteColor;
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "HelveticaNeueCyr-Light";
+
+      @include onPhone {
+        font-size: 9px;
+      }
+    }
+  }
+
+  &__title {
+    color: $whiteColor;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+
+    @include onMiniTablet {
+      text-align: center;
+      font-size: 5vw;
+    }
+
+    &__firstline {
+      font-family: "HelveticaNeueCyr-Roman";
+    }
+
+    &-twoline {
+      margin-left: 170px;
+      font-family: "HelveticaNeueCyr-ThinItalic";
+
+      @include onMiniTablet {
+        margin-left: 0;
+      }
+    }
+
+    &-threeline {
+      margin-left: 80px;
+      font-family: "HelveticaNeueCyr-Roman";
+
+      @include onMiniTablet {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__photo {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+
+    &-desc {
+      position: absolute;
+      color: $whiteColor;
+      font-size: 16px;
+      max-width: 143px;
+      width: 100%;
+      line-height: 140%;
+      bottom: 20px;
+      right: 130px;
+      font-family: "HelveticaNeueCyr-Light";
+
+      @include onPhone {
+        display: none;
+      }
+    }
+
+    &-descr {
+      position: absolute;
+      color: $whiteColor;
+      font-size: 16px;
+      line-height: 140%;
+      bottom: 8px;
+      right: 95px;
+      width: 244px;
+      font-family: "HelveticaNeueCyr-Light";
+
+      @include onMiniTablet {
+        font-size: 13px;
+        bottom: 66px;
+        right: 21px;
+        width: 170px;
+      }
+
+      @include onPhone {
+        display: none;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__holder {
+    display: flex;
+    margin-left: 240px;
+    gap: 150px;
+
+    @include onMiniTablet {
+      margin-left: 70px;
+      gap: 60px;
+    }
+  }
+}

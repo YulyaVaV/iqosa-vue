@@ -1,0 +1,153 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/vars.scss';
+
+.about-header {
+  position: relative;
+  background: $mainBgColor;
+  height: 744px;
+  z-index: 10;
+  overflow: hidden;
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 64px 0;
+    align-items: center;
+
+    @include onPhone {
+      padding: 32px 25px 0;
+    }
+  }
+
+  &__bgimage {
+    position: absolute;
+    top: 0;
+  }
+
+  &__logo {
+    position: relative;
+  }
+
+  &__icon {
+    position: relative;
+    width: 79px;
+    height: 25px;
+    z-index: 10;
+  }
+
+  &__icosahedron {
+    position: absolute;
+    mix-blend-mode: color-dodge;
+    left: 18px;
+    bottom: -1px;
+    z-index: 10;
+  }
+
+  &__menu {
+    width: 40px;
+    height: 7px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  &__request {
+    color: $whiteColor;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "HelveticaNeueCyr-Roman";
+    z-index: 10;
+
+    @include onPhone {
+      font-size: 12px;
+    }
+  }
+
+  &__main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+    color: $whiteColor;
+
+    @include onPhone {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    margin-top: 530px;
+    line-height: 120%;
+    font-family: "HelveticaNeueCyr-Light";
+    text-transform: uppercase;
+
+    @include onPhone {
+      margin-top: 480px;
+    }
+  }
+
+  &__type {
+    margin-top: 602px;
+    font-family: "HelveticaNeueCyr-Light";
+
+    @include onPhone {
+      margin-top: 40px;
+    }
+  }
+
+  &__round {
+    position: absolute;
+    border-radius: 50%;
+    background: $whiteColor;
+    width: 127px;
+    height: 127px;
+    right: 470px;
+    top: 255px;
+    z-index: 20;
+    cursor: pointer;
+
+    @include onDesktop {
+      right: 400px;
+    }
+
+    @include onTablet {
+      right: 280px;
+    }
+
+    @include onPhone {
+      right: 130px;
+    }
+  }
+
+  &__triangle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 45px;
+    left: 60px;
+  }
+}
+
+.carousel {
+  display: flex;
+  transition: 3s;
+}
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+#change-text {
+  transition: 3s;
+  opacity: 1;
+  transition: opacity 0.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}

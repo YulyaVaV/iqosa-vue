@@ -1,0 +1,71 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/vars.scss';
+
+.slogan-two {
+  color: $whiteColor;
+  margin-top: 200px;
+  margin-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 140px;
+  text-transform: uppercase;
+
+  @include onDesktop {
+    font-size: 9vw;
+  }
+
+  @include onPhone {
+    margin-top: 140px;
+  }
+
+  &__line-first {
+    display: flex;
+    gap: 50px;
+    
+    @include onTablet {
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+
+  &__creates {
+    margin-left: -40px;
+  }
+
+  &__perfect {
+    margin-right: -15px;
+    letter-spacing: 0.05em;
+    font-family: "HelveticaNeueCyr-ThinItalic";
+  }
+  
+  &__line-second {
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-left: -480px;
+
+    @include onDesktop {
+      gap: 49px;
+      margin-left: -390px;
+    }
+
+    @include onTablet {
+      gap: 30px;
+      justify-content: center;
+      margin-left: -200px;
+    }
+
+    @include onPhone {
+      margin-left: -20px;
+    }
+  }
+
+  &__a-perfect {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-family: "HelveticaNeueCyr-ThinItalic";
+  }
+}

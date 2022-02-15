@@ -1,0 +1,99 @@
+<template>
+  <div class="about-header">
+    <div class="about-header__wrapp">
+      <a href="/" class="about-header__logo">
+        <svg class="about-header__icon">
+          <use xlink:href="#logo"/>
+          <symbol id="logo">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.21991 0L1.1268 0.651765H4.79297L4.88419 0H1.21991ZM0.132862 15.1535L2.04784 1.79865H3.37515L1.54944 14.8587C1.28383 16.9813 1.54944 17.3186 2.17434 17.3186C2.79924 17.3186 3.83917 15.4077 4.75812 12.0875H5.29741C4.41206 15.8021 3.17256 18.9271 1.51991 18.9271C0.191889 18.9271 -0.250787 17.8363 0.132862 15.1535ZM14.001 18.9271C8.89552 18.9271 6.06239 14.7113 6.77067 9.58162C7.33138 5.30688 10.4891 1.79865 15.0635 1.79865C20.2871 1.79865 22.0577 5.13 21.9102 9.81747L22.0873 7.19366L22.8133 1.79865H24.1406L20.9659 25.0001H19.5493L21.0249 14.6229L21.556 12.117C20.6117 16.0085 18.5163 18.9271 14.001 18.9271ZM8.15773 9.64057C7.597 13.8269 9.63331 17.6594 14.5618 17.6594C18.5163 17.6594 20.5387 14.7918 21.0994 10.8708C21.7193 6.36022 20.0804 3.06634 15.3291 3.06634C11.1089 3.06634 8.71844 5.86702 8.15773 9.64057ZM33.8035 18.9271C39.2631 18.9271 42.0963 15.0356 42.0963 10.3776C42.0963 5.63117 39.027 1.79865 33.8035 1.79865C28.5798 1.79865 25.5107 5.71962 25.5107 10.4071C25.5107 15.124 28.3733 18.9271 33.8035 18.9271ZM33.8035 17.6594C29.3767 17.6594 26.8977 14.6523 26.8977 10.4071C26.8977 6.22079 29.4357 3.06634 33.8035 3.06634C38.1713 3.06634 40.7093 6.10287 40.7093 10.3776C40.7093 14.5639 38.3188 17.6594 33.8035 17.6594ZM44.6893 14.2101C46.5484 16.3033 48.6733 17.6594 52.2147 17.6594C53.9559 17.6594 55.2544 17.2761 56.0512 16.4802C56.8481 15.6842 57.2613 14.7703 57.2613 13.7384C57.2613 11.6453 55.6086 10.7923 51.0933 10.468C46.1649 10.1142 44.4236 8.992 44.4236 6.63352C44.4236 3.77388 46.6666 1.79865 50.6802 1.79865C54.3395 1.79865 56.8186 3.15477 58.7073 5.36585L57.4974 6.42717C55.8151 4.09816 53.7493 3.06634 50.7687 3.06634C47.3748 3.06634 45.8696 4.68778 45.8696 6.60404C45.8696 8.57926 46.7551 9.45249 51.0933 9.77678C56.2579 10.1306 58.6188 11.4389 58.6188 14.1512C58.6188 16.5096 56.73 18.9271 52.2147 18.9271C50.0013 18.9271 48.2601 18.6028 46.9616 17.9542C45.6927 17.2761 44.5122 16.4212 43.4793 15.3599L44.6893 14.2101ZM66.386 18.9271C70.3702 18.9271 73.5406 16.4181 74.6622 12.2907V16.2148C74.6622 18.0132 75.4462 18.9271 77.1283 18.9271C77.7186 18.9271 78.2203 18.7797 78.4859 18.6323V17.2761C78.2793 17.4235 77.8494 17.5415 77.3477 17.5415C76.4032 17.5415 76.0492 17.2172 76.0492 16.038V7.42951C76.0492 5.83755 75.5179 4.5109 74.4555 3.42011C73.4227 2.32932 71.8058 1.79865 69.4743 1.79865C65.9329 1.79865 63.2284 3.18426 61.4872 6.27975L62.6212 6.98729C64.0378 4.06868 66.4579 3.06634 69.3795 3.06634C71.3862 3.06634 72.7734 3.50854 73.5112 4.36348C74.2784 5.21845 74.4555 5.98428 74.4555 7.193C74.4555 8.53843 72.0961 9.04496 69.3366 9.63739C69.1938 9.66807 69.0498 9.69897 68.9051 9.73023C68.7096 9.77245 68.497 9.81751 68.2734 9.8649L68.2733 9.86492C67.2479 10.0822 65.9914 10.3485 65.0951 10.6148C63.9146 10.9685 63.2705 11.2868 62.4737 11.9649C61.677 12.6429 61.1625 13.7974 61.1625 15.0061C61.1625 16.0085 61.4703 16.9224 62.2081 17.7184C62.9459 18.5143 64.4087 18.9271 66.386 18.9271ZM68.9051 10.4285C69.1036 10.3867 69.3015 10.3454 69.4979 10.3045C71.9297 9.79744 74.1432 9.33591 74.6622 8.32664V10.6148C73.4458 14.4711 70.5009 17.6889 66.989 17.6889C64.0083 17.6889 62.4737 16.4212 62.4737 14.6229C62.4737 12.0422 64.3071 11.5832 67.7369 10.7243C68.1078 10.6315 68.4972 10.5339 68.9051 10.4285Z" fill="white"/>
+          </symbol>
+        </svg>
+        <img src="@/assets/images/icosahedron.png" alt="" class="about-header__icosahedron">
+      </a>
+      <svg class="about-header__menu">
+        <use xlink:href="#menu"/>
+        <symbol id="menu">
+          <rect width="40" height="1" fill="white"/>
+          <rect y="6" width="40" height="1" fill="white"/>
+        </symbol>
+      </svg>
+      <a href="" class="about-header__request">get request</a>
+    </div>
+    <div class="about-header__round">
+      <svg class="about-header__triangle">
+        <use :xlink:href="'#triangle'"/>
+        <symbol id="triangle">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.997833 1.99976L5.49783 6.39975L0.997833 10.7998" fill="black"/>
+          <path d="M0.997833 1.99976L5.49783 6.39975L0.997833 10.7998L0.997833 1.99976Z" stroke="black" stroke-linecap="square"/>
+        </symbol>
+      </svg>
+    </div>
+    
+    <div class="about-header__bgimage" id="slider">
+      <div id="carousel" class="carousel">
+        <img src="@/assets/images/bgimg.png" alt="" class="carousel__item">
+        <img src="@/assets/images/bgimg.png" alt="" class="carousel__item">
+        <img src="@/assets/images/bgimg.png" alt="" class="carousel__item">
+        <img src="@/assets/images/bgimg.png" alt="" class="carousel__item">
+      </div>
+    </div>
+
+    <div class="about-header__main">
+      <transition name="fade" mode="out-in">
+        <p class="about-header__desc" id="change-text">
+          WE ARE A DESIGN STUDIO<br/>
+          CONNECTING BRANDS TO HUMANS THROUGH
+        </p>
+      </transition>
+        <div class="about-header__type">
+        DESIGN AND TECHNOLOGY
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import './AboutHeaderStyle.scss';
+import { slogans } from '@/assets/constants/slogan';
+
+export default {
+  data() {
+    return {
+      slogans
+    }
+  },
+
+  mounted() {
+    function changingTextLoop() {
+      let i = 0;
+        setInterval(() => {
+          let changingText = document.getElementById('change-text');
+          console.log(changingText);
+          changingText.innerText = slogans[i];
+          if (i === slogans.length - 1) {
+            i = 0;
+          } else {
+            i += 1;
+          }
+        }, 4000)
+      }
+    changingTextLoop();
+
+    autoSlider();
+     let position = 0;
+ 
+    function autoSlider() {
+      let timer = setTimeout(function () {
+      let carousel = document.getElementById('carousel');
+      position = position - 1440;
+        if (position < -4320) {
+          position = 0;
+          clearTimeout(timer);
+        }
+      carousel.style.transform = `translateX(${position + 'px'})`;
+       autoSlider();
+      }, 5000);
+    }
+  }
+}
+</script>

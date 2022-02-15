@@ -1,0 +1,135 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/vars.scss';
+
+.header-main {
+  background: $mainBgColor;
+  color: $whiteColor;
+  padding-bottom: 188px;
+  padding-top: 170px;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 426px;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: color-dodge;
+  }
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: -90px;
+    padding: 0 120px;
+
+    @include onDesktop {
+      flex-direction: column;
+    }
+
+    @include onPhone {
+      margin-top: -10px;
+    }
+  } 
+  
+  &__explanation {
+    color: $whiteColor;
+    max-width: 390px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "HelveticaNeueCyr-Light";
+
+    @include onPhone {
+      width: 370px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  &__creates {
+    font-size: 160px;
+    height: 155px;
+    font-weight: 400;
+
+    @include onDesktop {
+      font-size: 10vw;
+      height: auto;
+    }
+
+    @include onPhone {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__perfect {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 160px;
+    padding-left: 97px;
+    height: 155px;
+    font-family: "HelveticaNeueCyr-ThinItalic";
+
+    @include onDesktop {
+      font-size: 10vw;
+      height: auto;
+      padding-left: 0;
+    }
+
+    @include onPhone {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__wrapp-perfect {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    @include onDesktop {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__wrapp-request {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border-bottom: 2px solid $whiteColor;
+    padding-bottom: 2px;
+
+    @include onPhone {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__design {
+    font-size: 160px;
+    padding-left: 556px;
+    font-weight: 400;
+
+    @include onDesktop {
+      font-size: 10vw;
+      height: auto;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__request {
+    font-family: "HelveticaNeueCyr-Roman";
+  }
+
+  &__now {
+    font-family: "HelveticaNeueCyr-LightItalic";
+    cursor: pointer;
+  }
+}

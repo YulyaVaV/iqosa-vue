@@ -1,0 +1,97 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/vars.scss';
+
+.slogan {
+  color: $whiteColor;
+  margin-top: 200px;
+  margin-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 148px;
+  text-transform: uppercase;
+
+  @include onPhone {
+    margin-top: 100px;
+  }
+
+  @include onDesktop {
+    font-size: 9vw;
+  }
+
+  &__line-first {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+
+    @include onDesktop {
+      gap: 80px;
+      justify-content: center;
+    }
+
+    @include onMiniTablet {
+      gap: 50px;
+      justify-content: center;
+    }
+
+    @include onTablet {
+      gap: 40px;
+      justify-content: center;
+    }
+
+    @include onPhone {
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+
+  &__creates {
+    margin-left: -40px;
+
+    @include onDesktop {
+      margin-left: 6px;
+    }
+  }
+
+  &__perfect {
+    margin-right: -15px;
+    font-family: "HelveticaNeueCyr-ThinItalic";
+
+    @include onDesktop {
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__design {
+    @include onDesktop {
+      letter-spacing: 0.05em;
+    }
+  }
+  
+  &__line-second {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include onDesktop {
+     gap: 90px;
+     justify-content: center;
+    }
+
+    @include onMiniTablet {
+      gap: 70px;
+    }
+
+    @include onTablet {
+      gap: 40px;
+    }
+  }
+
+  &__a-perfect {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-family: "HelveticaNeueCyr-ThinItalic";
+  }
+}

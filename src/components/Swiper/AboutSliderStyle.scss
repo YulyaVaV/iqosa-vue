@@ -1,0 +1,80 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/vars.scss';
+
+.about-slider {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    font-size: 22px;
+    color: $whiteColor;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    right: 0;
+    bottom: 535px;
+    z-index: 10;
+
+    @include onDesktop {
+      bottom: 435px;
+    }
+
+    @include onTablet {
+      font-size: 13px;
+      bottom: 340px;
+    }
+
+    @include onMiniTablet {
+      bottom: 410px;
+    }
+
+    @include onPhone {
+      bottom: 145px;
+      font-size: 10px;
+    }
+  }
+
+  &__desc {
+    padding-right: 120px;
+
+    @include onMiniTablet{
+      padding-right: 17px;
+    }
+  }
+
+  &__type {
+    padding-right: 175px;
+
+    @include onMiniTablet{
+      padding-right: 40px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.swiper-container {
+  margin-bottom: 275px;
+
+  @include onPhone {
+    margin-bottom: 100px;
+  }
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}

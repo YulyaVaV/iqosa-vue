@@ -1,0 +1,74 @@
+@import '@/assets/styles/vars.scss';
+@import '@/assets/styles/mixins.scss';
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+
+  @include onTablet {
+    justify-content: space-between;
+  }
+
+  @include onPhone {
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &-follow {
+    font-family: "HelveticaNeueCyr-Roman";
+  }
+
+  &-by {
+    display: flex;
+    gap: 5px;
+  }
+
+  &-link {
+    color: $blackColor;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+
+  &-links {
+    padding-left: 260px;
+
+    @include onDesktop {
+      padding-left: 222px;
+    }
+
+    @include onTablet {
+      padding-left: 0;
+    }
+  }
+
+  &-year {
+    color: $blackColor;
+    opacity: 0.5;
+    margin-left: 280px;
+    padding-right: 135px;
+    font-family: "HelveticaNeueCyr-Light";
+
+    @include onDesktop {
+      margin-left: 220px;
+    }
+
+    @include onTablet {
+      margin-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-developed {
+    color: $blackColor;
+    opacity: 0.5;
+    margin-right: 2px;
+    font-family: "HelveticaNeueCyr-Light";
+  }
+
+  &-firstlast{
+    font-family: "HelveticaNeueCyr-Light";
+  }
+}

@@ -1,0 +1,55 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/vars.scss';
+
+.header {
+  background: $mainBgColor;
+  padding: 34px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include onPhone {
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include onMiniPhone {
+    justify-content: flex-start;
+  }
+
+  &__icon {
+    width: 79px;
+    height: 25px;
+  }
+
+  &__nav {
+    font-size: 16px;
+    color: $whiteColor;
+    display: flex;
+    gap: 40px;
+
+    @include onPhone {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    @include onMiniPhone {
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    color: $whiteColor;
+    font-family: 'HelveticaNeueCyr-Roman';
+  }
+
+  &__lang {
+    color: $whiteColor;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+  }
+}

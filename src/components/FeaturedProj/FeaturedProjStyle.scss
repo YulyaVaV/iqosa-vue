@@ -1,0 +1,144 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/vars.scss';
+
+.featured {
+  display: flex;
+  background: $mainBgColor;
+  padding-left: 65px;
+  color: $whiteColor;
+  justify-content: space-between;
+  padding-bottom: 180px;
+
+  @include onTablet {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding: 0 25px 100px;
+  }
+
+  &__description {
+    @include onTablet {
+      max-width: 845px;
+      width: 100%;
+    }
+
+    &-wrapp {
+      @include onTablet {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        justify-content: space-between;
+      }
+
+      @include onPhone {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+    margin-bottom: 90px;
+    margin-top: 20px;
+    font-family: "HelveticaNeueCyr-LightItalic";
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+
+    &--project {
+      border-bottom: 2px solid $whiteColor;
+      font-family: "HelveticaNeueCyr-Roman";
+      cursor: pointer;
+    }
+  }
+
+  &__params {
+    font-size: 62px;
+    display: flex;
+    margin-bottom: 27px;
+
+    &--iq {
+      font-family: "HelveticaNeueCyr-Roman";
+    }
+
+    &--params {
+      font-style: italic;
+      letter-spacing: 0.05em;
+      font-family: 'HelveticaNeueCyr-ThinItalic';
+    }
+  }
+
+  &__explore {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 240px;
+    font-family: "HelveticaNeueCyr-Light";
+
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+
+    @include onPhone {
+      margin-left: 20px;
+    }
+  }
+
+  &__location {
+    font-size: 14px;
+    font-family: "HelveticaNeueCyr-LightItalic";
+
+    @include onTablet {
+      margin-bottom: 40px;
+      float: right;
+      text-align: right;
+    }
+  }
+
+  &__arrow-x {
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    width: 45px;
+    height: 40px;
+
+    @include onPhone {
+      left: 25px;
+      top: 27px;
+    }
+  }
+
+  &__design {
+    position: relative;
+  }
+
+  &__circle {
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    background: $whiteColor;
+    border-radius: 50%;
+    bottom: 140px;
+    right: 790px;
+
+    @include onTablet {
+      right: -20px;
+    }
+
+    @include onPhone {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &__room {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
