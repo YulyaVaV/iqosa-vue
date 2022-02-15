@@ -1,4 +1,11 @@
-# iqosa-vue
+# IQOSA
+
+- [DEMO LINK HERE](https://620b7ccbd8dd560c769a952f--iqosa.netlify.app/)
+- [Figma](https://www.figma.com/file/kSzb6ufJElQfgTIid0wen9/iqos?node-id=1%3A27)
+
+------------------------------------------
+Vue, HTML, SCSS, BEM, AOS, Swiper, Parallax
+-----------------------------------
 
 ## Project setup
 ```
