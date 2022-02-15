@@ -4,8 +4,10 @@
 - [Figma](https://www.figma.com/file/kSzb6ufJElQfgTIid0wen9/iqos?node-id=1%3A27)
 
 ------------------------------------------
-Vue, HTML, SCSS, BEM, AOS, Swiper, Parallax
+Vue, HTML, SCSS, BEM, AOS, Swiper, Parallax, Cross-browser semantic and adaptive layout
 -----------------------------------
+
+### The swiper starts working in 5 seconds
 
 ## Project setup
 ```
