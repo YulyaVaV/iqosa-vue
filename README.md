@@ -7,7 +7,7 @@
 Vue, HTML, SCSS, BEM, AOS, Swiper, Parallax, Cross-browser semantic and adaptive layout
 -----------------------------------
 
-### The swiper starts working in 5 seconds
+### In page About the swiper starts working in 5 seconds
 
 ## Project setup
 ```
